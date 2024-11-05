@@ -1,0 +1,11 @@
+#include<stdio.h> 
+void main() 
+{ 
+int a,b,c; 
+a=108;
+printf("No.of seats that a bus can hold:%d",a); 
+printf("\nNo.of rows that a bus have:");
+scanf("%d",&b); 
+c=a/b; 
+printf("\nNo.of seat in each rows:%d",c);
+}
