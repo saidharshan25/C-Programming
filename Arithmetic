@@ -1,0 +1,24 @@
+#include<stdio.h> 
+void main() {
+int a,b;
+char ari; 
+printf("Enter any two numbers:");
+scanf("%d%d",&a,&b); 
+printf("\nEnter the arithematic operator:"); 
+scanf("%c",&ari);
+switch(ari) 
+{ 
+case '+': 
+   printf("\nAddition %d",a+b);
+   break; 
+case '-': 
+   printf("\nSubraction %d",a-b); 
+   break; 
+case '*':  
+  printf("\nMultiplication %d",a*b);
+  break; 
+case '/': 
+  printf("\nDivision %d",a/b); 
+  break; 
+} 
+}
