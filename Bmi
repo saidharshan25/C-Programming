@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h> 
+void main() { 
+float bmi,we,he; 
+printf("Enter the weight of a person:"); 
+scanf("%f",&we); 
+printf("\nEnter the height of a person:"); 
+scanf("%f",&he); 
+bmi=we/(he*he); 
+printf("\nThe BMI of a person is:%.2f",bmi);
+if(bmi<=20) 
+{ 
+printf("\nUnder weight");
+} 
+else if(bmi>20&&bmi<=25)
+{ printf("\nhealthy weight");
+} 
+else 
+{ 
+printf("\nover weight"); 
+} 
+}
