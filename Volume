@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<math.h>
+void main() { 
+float vol,rad,hei,pi=3.14; 
+printf("Enter the radius of the cylinder:");
+scanf("%f",&rad); 
+printf("\nEnter the height of the cylinder:");
+scanf("%f",&hei);
+vol=pi*rad*rad*hei;
+printf("\nThe volume of the cylinder is:%.1f",vol);
+}
