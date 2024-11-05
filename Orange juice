@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main() {
+int a,b; 
+float c; 
+a=5; 
+printf("Oranges needs Kundavai to make juice:%d",a); 
+printf("\nNo.of oranges kundavai have:"); 
+scanf("%d",&b); 
+c=b/a; 
+printf("\nNo. of orange juices kundavai could make:%.2f",c);
+}
