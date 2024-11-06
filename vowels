@@ -1,0 +1,26 @@
+#include<stdio.h>
+ void main()
+ { 
+char character;
+ printf("Enter any character:"); scanf("%c",&character);
+ switch(character) 
+{
+ case 'a': 
+   printf("\nvowle"); 
+   break;
+ case 'e': 
+   printf("\nvowel"); 
+   break;
+ case 'i':
+   printf("\nvowel");
+   break;
+ case 'o': 
+   printf("\nvowel");
+   break; 
+ case'u': 
+   printf("\nvowel"); 
+   break;
+ default:
+   printf("\nconsonant"); 
+} 
+}
