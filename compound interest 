@@ -1,0 +1,14 @@
+#include<stdio.h>
+ #include<math.h> 
+void main() 
+{ 
+  double p,t,r,ci; 
+  printf("Enter the princple amount:");
+  scanf("%lf",&p); 
+  printf("\nEnter the time period:");  
+  scanf("%lf",&t); 
+  printf("\nEnter the rate of interst:");
+  scanf("%lf",&r); 
+  ci=p*pow((1+r/100),(r*t));
+  printf("\nThe Compound interst of the princle amount is:%.1lf",ci);
+ }
