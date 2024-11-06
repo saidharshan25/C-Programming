@@ -1,0 +1,12 @@
+#include<stdio.h> 
+void main() {
+ int rev,temp,a,n;
+ printf("\nEnter a number:");
+ scanf("%d",&a);
+ for(int i=0;i<5;i++)
+{ 
+   rev=a%10;
+   temp=temp+rev;
+   a=a/10; } 
+ printf("\nsum of the digit = %d",temp);
+ }
