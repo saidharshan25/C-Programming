@@ -1,0 +1,18 @@
+#include<stdio.h> 
+void main()
+ { 
+char colour,r,y,g; 
+scanf("%c",&colour); 
+switch(colour) 
+{ 
+  case 'r': 
+    printf("\nStop");
+    break;
+  case 'y':
+    printf("\nGet Ready"); 
+    break; 
+  case 'g': 
+    printf("\nGo");
+    break; 
+}  
+}
