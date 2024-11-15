@@ -1,9 +1,9 @@
 #include<stdio.h>
  void main()
  { 
-char character;
- printf("Enter any character:"); scanf("%c",&character);
- switch(character) 
+char ch;
+ printf("Enter any character:"); scanf("%c",&ch);
+ switch(ch) 
 {
  case 'a':
  case'A': 
