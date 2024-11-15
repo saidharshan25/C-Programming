@@ -5,19 +5,24 @@ char character;
  printf("Enter any character:"); scanf("%c",&character);
  switch(character) 
 {
- case 'a'||'A': 
+ case 'a':
+ case'A': 
    printf("\nvowle"); 
    break;
- case 'e'||'E':
+ case 'e':
+ case 'E':
    printf("\nvowel"); 
    break;
- case 'i'||'I':
+ case 'i':
+ case'I':
    printf("\nvowel");
    break;
- case 'o'||'O': 
+ case 'o':
+ case'O': 
    printf("\nvowel");
    break; 
- case'u'||'U': 
+ case'u':
+ case'U': 
    printf("\nvowel"); 
    break;
  default:
