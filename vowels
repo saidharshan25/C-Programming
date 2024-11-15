@@ -2,7 +2,8 @@
  void main()
  { 
 char ch;
- printf("Enter any character:"); scanf("%c",&ch);
+ printf("Enter any character:"); 
+ scanf("%c",&ch);
  switch(ch) 
 {
  case 'a':
