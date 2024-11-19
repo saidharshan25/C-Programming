@@ -8,7 +8,7 @@ char ch;
 {
  case 'a':
  case'A': 
-   printf("\nvowle"); 
+   printf("\nvowel"); 
    break;
  case 'e':
  case 'E':
