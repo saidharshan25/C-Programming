@@ -2,7 +2,7 @@
 void main() 
 { 
  int mark; 
- printf("Enter the score of the students:"); 
+ printf("Enter the score of students:"); 
  scanf("%d",&mark);
  if(mark>=90) 
  { 
