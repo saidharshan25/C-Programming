@@ -2,17 +2,17 @@
 #include <math.h>
 void main()
 {
-    int number, power, digit, sum = 0;
+    int num, p, dig, sum = 0;
     printf("Enter a number: ");
-    scanf("%d", &number);
+    scanf("%d", &num);
     printf("Enter the power: ");
-    scanf("%d", &power);
-    int temp = number;
+    scanf("%d", &p);
+    int temp = num;
     while (temp > 0)
     {
-        digit = temp % 10;             
-        sum += (int)pow(digit, power);
+        dig = temp % 10;             
+        sum += pow(dig, p);
         temp /= 10;             
     }
-    printf("The sum of the digits of %d raised to the power %d is: %d\n", number, power, sum);
+    printf("The sum of the digits of %d raised to the power %d is: %d\n", num, p, sum);
 }
