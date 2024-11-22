@@ -10,7 +10,7 @@ void main()
     scanf("%d", &num2);
     add(num1, num2);
 }
-void addNumbers(int a, int b) 
+void add(int a, int b) 
 {
     int sum = a + b;
     printf("The sum of %d and %d is: %d\n", a,
