@@ -1,0 +1,26 @@
+#include<stdio.h>
+void main()
+{
+    int r,n,t,temp=0,c;
+    printf("Enter the number:");
+    scanf("%d",&n);
+    c=n;
+    while(n!=0)
+    {
+        r=n%10;
+        temp=temp*10+r;
+        n/=10;
+    }
+    if(temp==c)
+    {
+        printf("\n Palidrome");
+    }
+    else
+    {
+        printf("\n Not Palidrome");
+    }
+}
+
+
+
+
