@@ -335,10 +335,31 @@ Output
 
 Program
 ~~~~~~~
+#include <stdio.h>
+#include <math.h>
+void main()
+{
+    int num, p, dig, sum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("Enter the power: ");
+    scanf("%d", &p);
+    int temp = num;
+    while (temp > 0)
+    {
+        dig = temp % 10;             
+        sum += pow(dig, p);
+        temp /= 10;             
+    }
+    printf("The sum of the digits of %d raised to the power %d is: %d\n", num, p, sum);
+}
 
 
 Output
 ~~~~~~~
+Enter a number: 123
+Enter the power: 2
+The sum of the digits of 123 raised to the power 2 is: 14
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 
 5.Write a C program to calculate the sum of a binomial expansion series upto n terms
