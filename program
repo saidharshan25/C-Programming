@@ -188,23 +188,25 @@ Output
 Program
 ~~~~~~~
 
-#include<stdio.h>
-void main()
-{
-    int digit,sum = 0,no = 137;
-
-    while(no>0)
-    {
-         digit = no%10;
-         sum = sum + digit;
-         no = no/10;
-    }
-    printf("Sum of digits is : %d", sum);
-}
+#include<stdio.h> 
+void main() {
+ int rev,temp,a,n;
+ printf("\nEnter a number:");
+ scanf("%d",&a);
+ for(int i=0;i<5;i++)
+{ 
+   rev=a%10;
+   temp=temp+rev;
+   a=a/10; } 
+ printf("\nsum of the digit = %d",temp);
+ }
 
 Output
 ~~~~~~~
 
+Enter a number:137
+
+sum of the digit = 11
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 
