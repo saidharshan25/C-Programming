@@ -212,15 +212,16 @@ Output
 
 Program
 ~~~~~~~
-
 #include<stdio.h>
 void main()
 {
-    int digit,no = 2374;
-
-    while(no>0)
+    int num,rev,temp,sum=0;
+    printf("Input a number:"):
+    scanf("%d",&num);
+    for(temp=num;num!=0;num=num/10)
     {
-         digit = no%10;
+         rev= num%10;
+         sum=sum*10=r
          printf("%d", digit);
          no = no/10;
     }
@@ -238,7 +239,6 @@ Output
 
 Program
 ~~~~~~~
-
 #include<stdio.h>
 void main()
 {
