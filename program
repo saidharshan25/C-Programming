@@ -339,10 +339,34 @@ By:~TMS~
 
 Program
 ~~~~~~~
+#include <stdio.h>
+int main() {
+    int num1, num2, gcd, lcm;
+     int  temp1, temp2, remainder;
+    printf("Enter two integers: ");
+    scanf("%d %d", &num1, &num2);
+    temp1 = num1;
+    temp2 = num2;
+    while (temp2 != 0) {
+        remainder = temp1 % temp2;
+        temp1 = temp2;
+        temp2 = remainder;
+    }
+    gcd = temp1;
+    lcm = (num1 * num2) / gcd;
+    printf("GCD of %d and %d is: %d\n", num1, num2, gcd);
+    printf("LCM of %d and %d is: %d\n", num1, num2, lcm);
+
+    return 0;
+}
 
 Output
 ~~~~~~~
-
+Enter two integers: 12 18
+GCD of 12 and 18 is: 6
+LCM of 12 and 18 is: 36
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+By:~Balasankaran
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 3.Write a C program to Generate Pascal’s Triangle up to a given number of rows.
 
