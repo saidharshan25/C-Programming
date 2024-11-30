@@ -277,22 +277,29 @@ Output
 
 Program
 ~~~~~~~
-
-#include<stdio.h>
-void main()
-{
-    int i,no=4,fact=no;
-
-    for(i=no-1;i>0;i--)
-    {
-       fact = fact*i;
-    }
-    printf("Factorial is %d\n",fact);
-}
-
+ #include<stdio.h>
+ int sum(int);
+ void main() 
+ {
+     int n; 
+     printf("Enter number:"); 
+     scanf("%d",&n); 
+     printf("%d",sum(n)); 
+ } 
+ int sum(int n) { 
+     if (n==0||n==1)
+     { 
+         return 1;
+     } 
+     else
+     { 
+         return n*sum(n-1);
+     }
+ }
 Output
 ~~~~~~~
-
+Enter number:5
+120
 
 ---------------------------------------------------------------------------------------------------
 High
@@ -372,6 +379,7 @@ By:~Balasankaran
 
 Program
 ~~~~~~~
+
 
 Output
 ~~~~~~~
