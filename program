@@ -63,7 +63,13 @@ Program
 #include<stdio.h>
 void main()
 {
-    int fno=0,sno=1,sum=0,n=6;
+    int fno,sno,sum=0,n;
+    printf("Enter the number series to be executed:");
+    scanf("%d",&n);
+    printf("Enter the first number:");
+    scanf("%d",&fno);
+    printf("Enter the second number:");
+    scanf("%d",&sno);
     printf("%d %d",fno,sno);
     for(int i=1;i<=n-2;i++)
     {
@@ -73,10 +79,12 @@ void main()
         printf(" %d",sum);
     }
 }
-
-
 Output
 ~~~~~~~
+Enter the number series to be executed:5
+Enter the first number:2
+Enter the second number:3
+2 3 5 8 13
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 
