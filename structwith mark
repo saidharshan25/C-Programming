@@ -1,0 +1,33 @@
+#include<stdio.h>
+struct student
+{
+    int id;
+    char name;
+    struct mark
+    {
+        int cp;
+        int mat;
+        int phy;
+    }m;
+};
+void main()
+{
+    struct student s[2];
+    for(int i=0;i<2;i++)
+    {
+        scanf("%d",&s[i].id);
+        scanf("\n%s",&s[i].name);
+        scanf("\n%d",&s[i].m.cp);
+        scanf("\n%d",&s[i].m.mat);
+        scanf("\n%d",&s[i].m.phy);
+    }
+    for(int i=0;i<2;i++)
+    {
+        printf("Student id is:\n",s[i].id);
+        printf("Student name is:\n",s[i].name);
+        printf("Student cp mark is:\n",s[i].m.cp);
+        printf("Student maths is:\n",s[i].m.mat);
+        printf("Student id is:\n",s[i].m.phy);
+    }
+    
+}
