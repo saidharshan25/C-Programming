@@ -1,0 +1,16 @@
+#include <stdio.h>
+union student
+{
+    int id;
+    char name[20];
+};
+void main()
+{
+    union student s;
+    union student x=s;
+    scanf(" %d",&x.id);
+    scanf(" %s",&x.name);
+    printf("ID %d\n",x.id);
+    printf("Name%s",x.name);
+    printf("%d",sizeof(x));
+}
