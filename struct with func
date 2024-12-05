@@ -1,0 +1,20 @@
+#include <stdio.h>
+struct student
+{
+    int id;
+    char name[20];
+};
+void display(struct student x);
+void main()
+{
+    struct student s;
+    printf("Enter student details:\n");
+    scanf("%d",&s.id);
+    scanf("%s",s.name);
+    display(s);
+}
+void display(struct student x)
+{
+    printf("ID: %d\n",x.id);
+    printf("Name:%s\n",x.name);
+}
