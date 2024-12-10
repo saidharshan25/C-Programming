@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+void main() {
     int i,c=0;
     char a[10];
     printf("Enter a string:");
@@ -10,5 +10,4 @@ int main() {
         c++;
     }
     printf("\n length of the string is:%d");
-    return 0;
 }
