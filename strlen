@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 void main() {
-    int i,c=0;
-    char a[10];
+    int i,length=0;
+    char a[30];
     printf("Enter a string:");
     scanf("%s",a);
-    for(i=0;a[i]=0;i++)
+    while(a[i]!='\0')
     {
-        c++;
+        i++;
+        length++;
     }
-    printf("\n length of the string is:%d");
+    printf("\n length of the string is:%d",length);
 }
