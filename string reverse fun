@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include<string.h>
+void main() 
+{
+    char a[100];
+    printf("Enter a string: ");
+    scanf("%s", &a);
+    printf("\nThe Reverse of the string is:%s",strrev(a));
+}
